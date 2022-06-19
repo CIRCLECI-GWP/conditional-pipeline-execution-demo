@@ -1,6 +1,6 @@
 # Conditional Pipeline Execution
 
-[![CircleCI](https://circleci.com/gh/mwaz/conditional-pipeline-execution.svg?style=svg)](https://circleci.com/gh/mwaz/conditional-pipeline-execution)
+[![CircleCI](https://circleci.com/gh/CIRCLECI-GWP/conditional-pipeline-execution-demo.svg?style=svg)](https://circleci.com/gh/CIRCLECI-GWP/conditional-pipeline-execution-demo)
 
 <p align="center"><img src="https://avatars3.githubusercontent.com/u/59034516"></p>
 
@@ -13,9 +13,9 @@ A Node API project with tests linting packages setup for the purpose of demonstr
 run the following command on your terminal to clone the repository:
 
 ```bash
-git clone git@github.com:mwaz/conditional-pipeline-execution.git
+git clone https://github.com/CIRCLECI-GWP/conditional-pipeline-execution-demo.git
 
-cd conditional-pipeline-execution
+cd conditional-pipeline-execution-demo
 ```
 
 ### install the dependencies
@@ -23,7 +23,7 @@ cd conditional-pipeline-execution
 Install the dependencies using the following command:
 
 ```bash
-    npm install
+npm install
 ```
 
 ### Create Mongo Atlas Account
