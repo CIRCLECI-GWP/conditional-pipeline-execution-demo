@@ -1,6 +1,10 @@
 version: 2.1
 workflows:
     lint-build-test:
+        when:
+          or:
+            - equal: [main, << pipeline.git.branch >>]
+            - equal: [staging, << pipeline.git.branch >>]
         jobs:
             - lint-code
             - hold:
@@ -10,7 +14,7 @@ workflows:
 
             - build-and-test:
                   requires:
-                      - lint-code
+                      - hold
 jobs:
     lint-code:
         docker:
