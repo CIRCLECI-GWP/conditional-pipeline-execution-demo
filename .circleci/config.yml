@@ -3,8 +3,8 @@ workflows:
     lint-build-test:
         when:
             or:
-                  - equal: [main, << pipeline.git.branch >>]
-                  - equal: [staging, << pipeline.git.branch >>]
+                - equal: [main, << pipeline.git.branch >>]
+                - equal: [staging, << pipeline.git.branch >>]
         jobs:
             - lint-code
             - hold:
