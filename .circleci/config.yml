@@ -30,7 +30,7 @@ jobs:
 
            - run:
                  name: lint check
-                 command: npm run format:check
+                 command: npm run lint:check
     build-and-test:
         docker:
             - image: cimg/node:16.13.2
