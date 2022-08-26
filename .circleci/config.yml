@@ -4,13 +4,13 @@ workflows:
        jobs:
            - lint-code
            - build-and-test:
-                 requires:
-                     - lint-code
+               requires:
+                   - lint-code
 jobs:
-   lint-code:
-       docker:
-           - image: cimg/node:16.13.2
-       steps:
+    lint-code:
+        docker:
+            - image: cimg/node:16.13.2
+        steps:
            - checkout
            - run:
                 name: update npm
