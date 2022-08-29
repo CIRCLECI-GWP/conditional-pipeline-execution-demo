@@ -9,7 +9,6 @@ workflows:
   on-commit:
     jobs:
       - dynamic/continue:
-          context: orb-publishing
           modules: |
             helm
             scripts
